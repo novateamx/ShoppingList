@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             adapter.submitList(it)
         }
 
+        binding.buttonAddShopItem.setOnClickListener {
+            val intent = ShopItemActivity.newIntentAddItem(this)
+            startActivity(intent)
+        }
     }
 
     private fun setupRecyclerView() {
@@ -72,7 +76,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         adapter.onShopItemClickListener = {
-            Log.d("MainActivity", "$it")
+            val intent = ShopItemActivity.newIntentEditItem(this, it.id)
+            startActivity(intent)
         }
     }
 }
