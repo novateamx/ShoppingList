@@ -3,11 +3,7 @@ package com.novateam.shoppinglist.presentation
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.ViewModelProvider
 import com.novateam.shoppinglist.R
 import com.novateam.shoppinglist.databinding.ActivityShopItemBinding
 import com.novateam.shoppinglist.domain.ShopItem
